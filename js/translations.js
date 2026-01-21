@@ -141,7 +141,7 @@ const translations = {
     villaTitle: "Home Away from Home",
     villaDesc: "Our spacious Villa offers the ultimate in comfort and convenience. With a fully equipped kitchen, separate living area, and generous space, it's perfect for longer stays or those who appreciate having extra room.",
     villaSize: "60 m²",
-    villaCapacity: "Up to 5 guests",
+    villaCapacity: "Up to 4 guests",
     villaBeds: "2 Double",
     villaAmenities: "Room Amenities",
     villaEquippedKitchen: "Equipped Kitchen",
@@ -344,7 +344,7 @@ const translations = {
     roomSuperiorCapacity: "Hasta 4 huéspedes",
     roomSuperiorTag: "Más Popular",
     roomVillaName: "Villa",
-    roomVillaCapacity: "Hasta 5 huéspedes",
+    roomVillaCapacity: "Hasta 4 huéspedes",
     roomBookBtn: "Reservar Esta Habitación",
     roomsViewAllBtn: "Ver Todas las Habitaciones y Detalles",
 

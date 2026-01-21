@@ -1,0 +1,11 @@
+# Hotel Confort Arenal - robots.txt
+# https://www.confortarenal.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.confortarenal.com/sitemap.xml
+
+# Crawl-delay (optional)
+# Crawl-delay: 1

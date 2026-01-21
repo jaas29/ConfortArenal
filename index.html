@@ -5,7 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hotel Confort Arenal - Your volcano-view retreat in La Fortuna, Costa Rica. Enjoy stunning Arenal Volcano views, refreshing pool, beautiful gardens, and warm Costa Rican hospitality.">
     <title>Hotel Confort Arenal | Volcano Views & Nature Retreat in La Fortuna, Costa Rica</title>
-    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#2D5A4A">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.confortarenal.com/">
+    <meta property="og:title" content="Hotel Confort Arenal | Volcano Views & Nature Retreat in La Fortuna, Costa Rica">
+    <meta property="og:description" content="Your volcano-view retreat in La Fortuna, Costa Rica. Enjoy stunning Arenal Volcano views, refreshing pool, beautiful gardens, and warm Costa Rican hospitality.">
+    <meta property="og:image" content="https://www.confortarenal.com/images/gallery/heroooo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_CR">
+    <meta property="og:site_name" content="Hotel Confort Arenal">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.confortarenal.com/">
+    <meta name="twitter:title" content="Hotel Confort Arenal | La Fortuna, Costa Rica">
+    <meta name="twitter:description" content="Your volcano-view retreat with stunning Arenal Volcano views.">
+    <meta name="twitter:image" content="https://www.confortarenal.com/images/gallery/heroooo.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.confortarenal.com/">
+
+    <!-- Schema.org Structured Data for Hotel -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hotel Confort Arenal",
+      "description": "Family-run hotel with stunning Arenal Volcano views in La Fortuna, Costa Rica. Featuring comfortable rooms, swimming pool, free breakfast, and tour assistance.",
+      "url": "https://www.confortarenal.com",
+      "telephone": "+506-8615-4141",
+      "email": "info@confortarenal.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Route 142, 10km west of La Fortuna",
+        "addressLocality": "La Fortuna de San Carlos",
+        "addressRegion": "Alajuela",
+        "postalCode": "21007",
+        "addressCountry": "CR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "10.49570",
+        "longitude": "-84.71205"
+      },
+      "image": [
+        "https://www.confortarenal.com/images/gallery/heroooo.jpg",
+        "https://www.confortarenal.com/images/rooms/superior/DSCF1962-HDR.jpg"
+      ],
+      "priceRange": "$$",
+      "checkinTime": "14:00",
+      "checkoutTime": "11:00",
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Free Breakfast", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Pet Friendly", "value": true}
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "8.8",
+        "bestRating": "10",
+        "worstRating": "1",
+        "ratingCount": "150"
+      },
+      "sameAs": [
+        "https://www.facebook.com/confortarenal",
+        "https://www.instagram.com/confortarenalhospedaje/"
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://hotels.cloudbeds.com/es/reservation/VSWh83"
+        }
+      }
+    }
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +107,9 @@
     <script src="js/translations.js"></script>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="header-container">
@@ -52,10 +144,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="main-content">
         <div class="hero-bg">
             <div class="hero-overlay"></div>
-            <video autoplay muted loop playsinline class="hero-video" poster="/images/gallery/heroooo.jpg">
+            <video autoplay muted loop playsinline class="hero-video" poster="images/gallery/heroooo.jpg">
                 <source src="https://assets.mixkit.co/videos/preview/mixkit-tropical-island-landscape-seen-from-above-4267-large.mp4" type="video/mp4">
             </video>
         </div>
@@ -87,13 +179,13 @@
                 </div>
                 <div class="intro-images">
                     <div class="intro-img intro-img-1">
-                        <img src="/images/gallery/herooo.jpg" alt="Arenal Volcano view">
+                        <img src="images/gallery/herooo.jpg" alt="Arenal Volcano view from Hotel Confort Arenal" loading="lazy">
                     </div>
                     <div class="intro-img intro-img-2">
-                        <img src="/images/gallery/puente.jpg" alt="Tropical gardens">
+                        <img src="images/gallery/puente.jpg" alt="Tropical gardens with bridge at Hotel Confort Arenal" loading="lazy">
                     </div>
                     <div class="intro-img intro-img-3">
-                        <img src="/images/gallery/readzonee.jpg" alt="Hotel pool">
+                        <img src="images/gallery/readzonee.jpg" alt="Relaxation area with volcano view" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -260,19 +352,19 @@
             
             <div class="testimonials-slider">
                 <div class="testimonial">
-                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars rating"><span aria-hidden="true">★★★★★</span></div>
                     <blockquote class="testimonial-quote">"An amazing experience! Clean rooms, tasty breakfast, and breathtaking volcano views. The staff went above and beyond to make our stay perfect. Excellent value for money!"</blockquote>
                     <cite class="testimonial-author">— TripAdvisor Guest</cite>
                 </div>
-                
+
                 <div class="testimonial">
-                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars rating"><span aria-hidden="true">★★★★★</span></div>
                     <blockquote class="testimonial-quote">"The property has an amazing view of the Arenal Volcano. Staff is incredibly friendly and the breakfast was delicious – a perfect stay! Will definitely return."</blockquote>
                     <cite class="testimonial-author">— Hotels.com Review</cite>
                 </div>
-                
+
                 <div class="testimonial">
-                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars rating"><span aria-hidden="true">★★★★★</span></div>
                     <blockquote class="testimonial-quote">"Beautiful gardens, peaceful atmosphere, and the pool with volcano views is simply magical. Hazel and the team made us feel like family. Highly recommend!"</blockquote>
                     <cite class="testimonial-author">— Google Review</cite>
                 </div>
@@ -318,7 +410,8 @@
                         height="100%"
                         style="border:0;"
                         allowfullscreen=""
-                        loading="lazy">
+                        loading="lazy"
+                        title="Google Maps showing Hotel Confort Arenal location in La Fortuna, Costa Rica">
                     </iframe>
                 </div>
             </div>
@@ -328,7 +421,7 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="cta-bg">
-            <img src="/images/gallery/poooll.jpg" alt="Arenal Volcano sunset">
+            <img src="images/gallery/poooll.jpg" alt="Swimming pool with Arenal Volcano view at sunset" loading="lazy">
         </div>
         <div class="cta-overlay"></div>
         <div class="container">
@@ -402,5 +495,6 @@
     </a>
 
     <script src="js/main.js"></script>
+    <script src="js/cookie-consent.js"></script>
 </body>
 </html>

@@ -260,6 +260,9 @@ const translations = {
     galleryPageLabel: "Our Visual Story",
     galleryPageTitle: "Photo Gallery",
     galleryPageDesc: "Explore the beauty of Hotel Confort Arenal and the stunning landscapes of La Fortuna through our photo collection.",
+    galleryCTATitle: "Ready to Experience This Beauty?",
+    galleryCTAText: "Book your stay and create your own memories at Hotel Confort Arenal.",
+    galleryCTABtn: "Book Your Stay",
 
     // ABOUT PAGE - Additional Keys
     aboutStoryLabel: "Welcome",
@@ -565,6 +568,9 @@ const translations = {
     galleryPageLabel: "Nuestra Historia Visual",
     galleryPageTitle: "Galería de Fotos",
     galleryPageDesc: "Explora la belleza del Hotel Confort Arenal y los paisajes espectaculares de La Fortuna a través de nuestra colección de fotos.",
+    galleryCTATitle: "¿Listo para Experimentar Esta Belleza?",
+    galleryCTAText: "Reserva tu estadía y crea tus propios recuerdos en Hotel Confort Arenal.",
+    galleryCTABtn: "Reserva Tu Estadía",
 
     // PÁGINA SOBRE NOSOTROS - Claves Adicionales
     aboutStoryLabel: "Bienvenido",

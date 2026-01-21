@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Confort Arenal - Your volcano-view retreat in La Fortuna, Costa Rica. Enjoy stunning Arenal Volcano views, refreshing pool, beautiful gardens, and warm Costa Rican hospitality.">
+    <title>Hotel Confort Arenal | Volcano Views & Nature Retreat in La Fortuna, Costa Rica</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/brand/logo.png" alt="Hotel Confort Arenal Logo">
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" data-i18n="navHome">Home</a></li>
+                    <li><a href="pages/rooms.html" class="nav-link" data-i18n="navRooms">Rooms</a></li>
+                    <li><a href="pages/gallery.html" class="nav-link" data-i18n="navGallery">Gallery</a></li>
+                    <li><a href="pages/about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="pages/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="language-switcher">
+                <a href="#" class="lang-link active" data-lang="en">EN</a>
+                <span>|</span>
+                <a href="#" class="lang-link" data-lang="es">ES</a>
+            </div>
+
+            <a href="https://hotels.cloudbeds.com/es/reservation/VSWh83" target="_blank" class="btn btn-book" data-i18n="bookNow">Book Now</a>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <video autoplay muted loop playsinline class="hero-video" poster="/images/gallery/heroooo.jpg">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-tropical-island-landscape-seen-from-above-4267-large.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <span class="hero-label" data-i18n="heroLocation">La Fortuna, Costa Rica</span>
+            <h1 class="hero-title" data-i18n="heroTitle">Your Volcano-View<br>Retreat Awaits</h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Immerse yourself in nature's grandeur with breathtaking views of Arenal Volcano, lush tropical gardens, and the warmth of Costa Rican hospitality.</p>
+            <div class="hero-cta">
+                <a href="https://hotels.cloudbeds.com/es/reservation/VSWh83" target="_blank" class="btn btn-primary" data-i18n="heroBookBtn">Book Your Stay</a>
+                <a href="pages/rooms.html" class="btn btn-outline" data-i18n="heroExploreBtn">Explore Rooms</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="heroScrollText">Scroll to discover</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <span class="section-label" data-i18n="introLabel">Welcome to Paradise</span>
+                    <h2 class="section-title" data-i18n="introTitle">Where Nature Meets<br>Comfort</h2>
+                    <p class="intro-text" data-i18n="introText1">Nestled in the heart of La Fortuna, Hotel Confort Arenal offers an intimate escape surrounded by the magnificent Arenal Volcano. Our family-run hotel combines the comfort of home with the beauty of Costa Rica's most stunning landscapes.</p>
+                    <p class="intro-text" data-i18n="introText2">Wake up to volcanic vistas, stroll through our tropical gardens, and let the sounds of nature be your soundtrack. This is more than a stay—it's an experience.</p>
+                    <a href="pages/about.html" class="btn btn-secondary" data-i18n="introBtn">Our Story</a>
+                </div>
+                <div class="intro-images">
+                    <div class="intro-img intro-img-1">
+                        <img src="/images/gallery/herooo.jpg" alt="Arenal Volcano view">
+                    </div>
+                    <div class="intro-img intro-img-2">
+                        <img src="/images/gallery/puente.jpg" alt="Tropical gardens">
+                    </div>
+                    <div class="intro-img intro-img-3">
+                        <img src="/images/gallery/readzonee.jpg" alt="Hotel pool">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="rooms-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="roomsLabel">Accommodations</span>
+                <h2 class="section-title" data-i18n="roomsTitle">Your Sanctuary<br>in the Rainforest</h2>
+                <p class="section-desc" data-i18n="roomsDesc">Each room offers volcano views, modern amenities, and the tranquility of nature just outside your door.</p>
+            </div>
+
+            <div class="rooms-grid">
+                <article class="room-card">
+                    <div class="room-image">
+                        <img src="images/rooms/standard/boton-standar-1024x1024.jpg" alt="Standard Room">
+                        <div class="room-badge">40m²</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name" data-i18n="roomStandardName">Standard Room</h3>
+                        <p class="room-capacity" data-i18n="roomStandardCapacity">Up to 4 guests</p>
+                        <ul class="room-features">
+                            <li data-i18n="volcanoView">Volcano View</li>
+                            <li data-i18n="doubleBeds">2 Double Beds</li>
+                            <li data-i18n="airConditioning">Air Conditioning</li>
+                            <li data-i18n="privateTerraces">Private Terrace</li>
+                        </ul>
+                        <a href="https://hotels.cloudbeds.com/es/reservation/VSWh83" target="_blank" class="btn btn-room" data-i18n="roomBookBtn">Book This Room</a>
+                    </div>
+                </article>
+
+                <article class="room-card featured">
+                    <div class="room-image">
+                        <img src="images/rooms/superior/DSCF1962-HDR.jpg" alt="Superior Room">
+                        <div class="room-badge">45m²</div>
+                        <div class="room-tag" data-i18n="roomSuperiorTag">Most Popular</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name" data-i18n="roomSuperiorName">Superior Room</h3>
+                        <p class="room-capacity" data-i18n="roomSuperiorCapacity">Up to 4 guests</p>
+                        <ul class="room-features">
+                            <li data-i18n="volcanoView">Volcano View</li>
+                            <li data-i18n="queenBed">Double + Queen Bed</li>
+                            <li data-i18n="airConditioning">Air Conditioning</li>
+                            <li data-i18n="privateTerraces">Private Terrace</li>
+                        </ul>
+                        <a href="https://hotels.cloudbeds.com/es/reservation/VSWh83" target="_blank" class="btn btn-room" data-i18n="roomBookBtn">Book This Room</a>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-image">
+                        <img src="images/rooms/villa/DSCF1841-HDR.jpg" alt="Villa">
+                        <div class="room-badge">60m²</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name" data-i18n="roomVillaName">Villa</h3>
+                        <p class="room-capacity" data-i18n="roomVillaCapacity">Up to 5 guests</p>
+                        <ul class="room-features">
+                            <li data-i18n="volcanoView">Volcano View</li>
+                            <li data-i18n="equippedKitchen">Equipped Kitchen</li>
+                            <li data-i18n="airConditioning">Air Conditioning</li>
+                            <li data-i18n="privateTerraces">Private Terrace</li>
+                        </ul>
+                        <a href="https://hotels.cloudbeds.com/es/reservation/VSWh83" target="_blank" class="btn btn-room" data-i18n="roomBookBtn">Book This Room</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="rooms-cta">
+                <a href="pages/rooms.html" class="btn btn-secondary" data-i18n="roomsViewAllBtn">View All Rooms & Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label" data-i18n="amenitiesLabel">What's Included</span>
+                <h2 class="section-title" data-i18n="amenitiesTitle">Everything You Need</h2>
+            </div>
+
+            <div class="amenities-grid">
+                <div class="amenity">
+                    <div class="amenity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h4 data-i18n="amenityBreakfast">Free Breakfast</h4>
+                    <p data-i18n="amenityBreakfastDesc">Traditional Costa Rican breakfast included daily</p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h4 data-i18n="amenityPool">Swimming Pool</h4>
+                    <p data-i18n="amenityPoolDesc">Refreshing pool with stunning volcano views</p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+                        </svg>
+                    </div>
+                    <h4 data-i18n="amenityWifi">Free Wi-Fi</h4>
+                    <p data-i18n="amenityWifiDesc">Stay connected throughout the property</p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h4 data-i18n="amenityParking">Free Parking</h4>
+                    <p data-i18n="amenityParkingDesc">Secure private parking for all guests</p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h4 data-i18n="amenityTours">Tour Assistance</h4>
+                    <p data-i18n="amenityToursDesc">We help you plan unforgettable adventures</p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h4 data-i18n="amenityGardens">Garden Trails</h4>
+                    <p data-i18n="amenityGardensDesc">Explore our lush tropical gardens</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label" data-i18n="testimonialLabel">Guest Reviews</span>
+                <h2 class="section-title" data-i18n="testimonialTitle">What Our Guests Say</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote class="testimonial-quote">"An amazing experience! Clean rooms, tasty breakfast, and breathtaking volcano views. The staff went above and beyond to make our stay perfect. Excellent value for money!"</blockquote>
+                    <cite class="testimonial-author">— TripAdvisor Guest</cite>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote class="testimonial-quote">"The property has an amazing view of the Arenal Volcano. Staff is incredibly friendly and the breakfast was delicious – a perfect stay! Will definitely return."</blockquote>
+                    <cite class="testimonial-author">— Hotels.com Review</cite>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote class="testimonial-quote">"Beautiful gardens, peaceful atmosphere, and the pool with volcano views is simply magical. Hazel and the team made us feel like family. Highly recommend!"</blockquote>
+                    <cite class="testimonial-author">— Google Review</cite>
+                </div>
+            </div>
+            
+            <div class="testimonials-rating">
+                <div class="rating-badge">
+                    <span class="rating-score" data-i18n="testimonialRating">8.8</span>
+                    <span class="rating-text" data-i18n="testimonialRatingText">Excellent</span>
+                    <span class="rating-source" data-i18n="testimonialRatingSource">Hotels.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-content">
+                    <span class="section-label" data-i18n="locationLabel">Find Us</span>
+                    <h2 class="section-title" data-i18n="locationTitle">Your Adventure<br>Starts Here</h2>
+                    <p class="location-text" data-i18n="locationText">Located just 10 minutes from downtown La Fortuna, Hotel Confort Arenal offers the perfect balance of tranquility and accessibility to all major attractions.</p>
+
+                    <div class="location-details">
+                        <div class="location-item">
+                            <strong>Address</strong>
+                            <span data-i18n="locationAddress">Route 142, 10km west of La Fortuna<br>San Carlos, Alajuela, Costa Rica</span>
+                        </div>
+                        <div class="location-item">
+                            <strong data-i18n="locationAttractionsTitle">Nearby Attractions</strong>
+                            <span data-i18n="locationAttractions">Arenal Volcano National Park • Tabacón Hot Springs • La Fortuna Waterfall</span>
+                        </div>
+                    </div>
+
+                    <a href="pages/contact.html" class="btn btn-secondary" data-i18n="locationDirectionsBtn">Get Directions</a>
+                </div>
+                
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.5!2d-84.71205!3d10.49570!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa009902b8dd473:0x5d4ba36da102a299!2sConfort%20Arenal!5e0!3m2!1sen!2scr!4v1702700000000"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-bg">
+            <img src="/images/gallery/poooll.jpg" alt="Arenal Volcano sunset">
+        </div>
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-i18n="ctaTitle">Ready to Experience<br>Paradise?</h2>
+                <p class="cta-text" data-i18n="ctaText">Book your stay at Hotel Confort Arenal and discover the magic of Costa Rica's most spectacular destination.</p>
+                <a href="https://hotels.cloudbeds.com/es/reservation/VSWh83" target="_blank" class="btn btn-primary btn-large" data-i18n="ctaBtn">Book Your Stay Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/brand/logo.png" alt="Hotel Confort Arenal" class="footer-logo">
+                    <p class="footer-tagline" data-i18n="footerTagline">Hospedaje & Naturaleza</p>
+                    <p class="footer-desc" data-i18n="footerDesc">Your home away from home in the heart of Costa Rica's most beautiful landscape.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-i18n="footerQuickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                        <li><a href="pages/rooms.html" data-i18n="navRooms">Rooms</a></li>
+                        <li><a href="pages/gallery.html" data-i18n="navGallery">Gallery</a></li>
+                        <li><a href="pages/about.html" data-i18n="navAbout">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 data-i18n="footerContact">Contact</h4>
+                    <ul>
+                        <li>
+                            <a href="tel:+50686154141" data-i18n="footerPhone">+506 8615 4141</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@confortarenal.com" data-i18n="footerEmail">info@confortarenal.com</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/50686154141" target="_blank" data-i18n="footerWhatsApp">WhatsApp Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 data-i18n="footerFollow">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/confortarenal" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/confortarenalhospedaje/" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footerCopyright">&copy; 2025 Hotel Confort Arenal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50686154141" target="_blank" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1115,10 +1115,14 @@ p {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .hero-cta .btn {
         width: 100%;
         max-width: 280px;
+    }
+
+    .hero-scroll {
+        display: none;
     }
 }
 

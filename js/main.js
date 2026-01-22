@@ -190,6 +190,138 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ========================================
+    // Room Images Lightbox (for rooms page)
+    // ========================================
+    const roomDetailSections = document.querySelectorAll('.room-detail-images');
+
+    if (roomDetailSections.length > 0) {
+        // Create lightbox if it doesn't exist (might already exist from gallery)
+        let roomLightbox = document.querySelector('.lightbox');
+
+        if (!roomLightbox) {
+            roomLightbox = document.createElement('div');
+            roomLightbox.className = 'lightbox';
+            roomLightbox.innerHTML = `
+                <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+                <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+                <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+                <div class="lightbox-content">
+                    <img src="" alt="">
+                </div>
+            `;
+            document.body.appendChild(roomLightbox);
+        }
+
+        const lightboxImg = roomLightbox.querySelector('img');
+        const closeBtn = roomLightbox.querySelector('.lightbox-close');
+        const prevBtn = roomLightbox.querySelector('.lightbox-prev');
+        const nextBtn = roomLightbox.querySelector('.lightbox-next');
+
+        let currentRoomImages = [];
+        let currentRoomIndex = 0;
+
+        function openRoomLightbox(images, startIndex) {
+            currentRoomImages = images;
+            currentRoomIndex = startIndex;
+            lightboxImg.src = currentRoomImages[currentRoomIndex];
+            roomLightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeRoomLightbox() {
+            roomLightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function showRoomPrev() {
+            currentRoomIndex = (currentRoomIndex - 1 + currentRoomImages.length) % currentRoomImages.length;
+            lightboxImg.src = currentRoomImages[currentRoomIndex];
+        }
+
+        function showRoomNext() {
+            currentRoomIndex = (currentRoomIndex + 1) % currentRoomImages.length;
+            lightboxImg.src = currentRoomImages[currentRoomIndex];
+        }
+
+        // Set up each room section
+        roomDetailSections.forEach(section => {
+            const mainImage = section.querySelector('.room-main-image img');
+            const thumbImages = section.querySelectorAll('.room-thumb img');
+
+            // Collect all images for this room
+            const allImages = [];
+            if (mainImage) allImages.push(mainImage.src);
+            thumbImages.forEach(img => allImages.push(img.src));
+
+            // Main image click
+            if (mainImage) {
+                mainImage.style.cursor = 'pointer';
+                mainImage.addEventListener('click', () => openRoomLightbox(allImages, 0));
+            }
+
+            // Thumbnail clicks
+            thumbImages.forEach((img, index) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', () => openRoomLightbox(allImages, index + 1));
+            });
+        });
+
+        // Event listeners (only if not already set by gallery lightbox)
+        if (!document.querySelector('.gallery-item')) {
+            closeBtn.addEventListener('click', closeRoomLightbox);
+            prevBtn.addEventListener('click', showRoomPrev);
+            nextBtn.addEventListener('click', showRoomNext);
+
+            roomLightbox.addEventListener('click', (e) => {
+                if (e.target === roomLightbox) closeRoomLightbox();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (!roomLightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeRoomLightbox();
+                if (e.key === 'ArrowLeft') showRoomPrev();
+                if (e.key === 'ArrowRight') showRoomNext();
+            });
+        } else {
+            // If gallery lightbox exists, override its functions for room images
+            closeBtn.addEventListener('click', closeRoomLightbox);
+            prevBtn.addEventListener('click', (e) => {
+                if (currentRoomImages.length > 0) {
+                    e.stopPropagation();
+                    showRoomPrev();
+                }
+            });
+            nextBtn.addEventListener('click', (e) => {
+                if (currentRoomImages.length > 0) {
+                    e.stopPropagation();
+                    showRoomNext();
+                }
+            });
+        }
+
+        // Touch swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        roomLightbox.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        roomLightbox.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const swipeThreshold = 50;
+
+            if (touchStartX - touchEndX > swipeThreshold) {
+                // Swipe left - next image
+                showRoomNext();
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                // Swipe right - previous image
+                showRoomPrev();
+            }
+        }, { passive: true });
+    }
+
+    // ========================================
     // FAQ Accordion (for contact/about page)
     // ========================================
     const faqItems = document.querySelectorAll('.faq-item');

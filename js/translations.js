@@ -323,7 +323,7 @@ const translations = {
     heroLocation: "La Fortuna, Costa Rica",
     heroTitle: "Tu Retiro con Vista<br>al Volcán te Espera",
     heroSubtitle: "Sumérgete en la grandiosidad de la naturaleza con vistas impresionantes del Volcán Arenal, jardines tropicales exuberantes y la calidez de la hospitalidad costarricense.",
-    heroScrollText: "Desplázate para descubrir",
+    heroScrollText: "Desliza y descubre",
     heroBookBtn: "Reserva Tu Estadía",
     heroExploreBtn: "Explorar Habitaciones",
 

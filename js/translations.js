@@ -91,7 +91,7 @@ const translations = {
     footerQuickLinks: "Quick Links",
     footerContact: "Contact",
     footerFollow: "Follow Us",
-    footerCopyright: "&copy; 2025 Hotel Confort Arenal. All rights reserved.",
+    footerCopyright: "&copy; 2026 Hotel Confort Arenal. All rights reserved.",
     footerPhone: "+506 8615 4141",
     footerEmail: "info@confortarenal.com",
     footerWhatsApp: "WhatsApp Us",

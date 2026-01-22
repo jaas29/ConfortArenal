@@ -1,0 +1,91 @@
+# Netlify Configuration for Hotel Confort Arenal
+# This file configures build settings and security headers
+
+[build]
+  publish = "."
+
+# Redirect www to non-www (or vice versa) - uncomment your preference
+# [[redirects]]
+#   from = "https://www.confortarenal.com/*"
+#   to = "https://confortarenal.com/:splat"
+#   status = 301
+#   force = true
+
+# HTTP to HTTPS redirect (handled automatically by Netlify)
+
+# Custom 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Security Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # HTTPS Strict Transport Security - Force HTTPS for 1 year
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # Prevent clickjacking - only allow same origin framing
+    X-Frame-Options = "SAMEORIGIN"
+
+    # Prevent MIME type sniffing
+    X-Content-Type-Options = "nosniff"
+
+    # Referrer Policy - Send origin only on cross-origin requests
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Permissions Policy - Disable sensitive features
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+
+    # Content Security Policy
+    # Allows: self, Google (fonts, maps, analytics), YouTube, Mixkit, Cloudbeds, WhatsApp
+    Content-Security-Policy = '''
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: https: blob:;
+      media-src 'self' https://assets.mixkit.co;
+      frame-src https://www.youtube.com https://www.google.com https://hotels.cloudbeds.com;
+      connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;
+      base-uri 'self';
+      form-action 'self' https://hotels.cloudbeds.com;
+    '''
+
+# Cache static assets
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML pages - shorter cache with revalidation
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"

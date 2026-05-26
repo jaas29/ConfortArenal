@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hotel Confort Arenal - Your volcano-view retreat in La Fortuna, Costa Rica. Enjoy stunning Arenal Volcano views, refreshing pool, beautiful gardens, and warm Costa Rican hospitality.">
+    <meta name="google-site-verification" content="XRPGAnT5kSGyuwu4ux4AxKheKsOCQqVSbNlNVjhJPwc">
     <title>Hotel Confort Arenal | Volcano Views & Nature Retreat in La Fortuna, Costa Rica</title>
 
     <!-- Favicon -->
@@ -100,7 +101,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.google.com">
     <link rel="preconnect" href="https://www.youtube.com">
-    <link rel="dns-prefetch" href="https://assets.mixkit.co">
     <link rel="dns-prefetch" href="https://hotels.cloudbeds.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
@@ -114,12 +114,12 @@
     <script src="js/translations.js"></script>
 
     <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MYSTER07J"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BELG2GGS2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-7MYSTER07J');
+      gtag('config', 'G-2BELG2GGS2');
     </script>
 </head>
 <body>
@@ -163,9 +163,7 @@
     <section class="hero" id="main-content">
         <div class="hero-bg">
             <div class="hero-overlay"></div>
-            <video autoplay muted loop playsinline class="hero-video" poster="images/gallery/heroooo.jpg">
-                <source src="https://assets.mixkit.co/videos/preview/mixkit-tropical-island-landscape-seen-from-above-4267-large.mp4" type="video/mp4">
-            </video>
+            <img src="images/gallery/heroooo.jpg" alt="Arenal Volcano view from Hotel Confort Arenal" class="hero-image">
         </div>
         <div class="hero-content">
             <span class="hero-label" data-i18n="heroLocation">La Fortuna, Costa Rica</span>
@@ -277,6 +275,38 @@
 
             <div class="rooms-cta">
                 <a href="pages/rooms.html" class="btn btn-secondary" data-i18n="roomsViewAllBtn">View All Rooms & Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Direct Section -->
+    <section class="book-direct">
+        <div class="container">
+            <div class="book-direct-content">
+                <div class="book-direct-text">
+                    <span class="section-label light" data-i18n="bookDirectLabel">Why Book Direct?</span>
+                    <h2 class="section-title light" data-i18n="bookDirectTitle">Best Rate Guaranteed</h2>
+                    <p data-i18n="bookDirectDesc">Book directly on our website and get the best available rate -- no hidden fees, no middlemen. Plus, enjoy exclusive perks only available to direct guests.</p>
+                </div>
+                <div class="book-direct-perks">
+                    <div class="perk">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        <span data-i18n="perkBestRate">Best price -- always lower than OTAs</span>
+                    </div>
+                    <div class="perk">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        <span data-i18n="perkFlexible">Flexible cancellation policy</span>
+                    </div>
+                    <div class="perk">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        <span data-i18n="perkDirect">Direct communication with our team</span>
+                    </div>
+                    <div class="perk">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        <span data-i18n="perkSpecial">Special requests handled personally</span>
+                    </div>
+                </div>
+                <a href="https://hotels.cloudbeds.com/es/reservation/VSWh83" target="_blank" class="btn btn-outline btn-large" data-i18n="bookDirectBtn">Book Direct & Save</a>
             </div>
         </div>
     </section>
@@ -450,6 +480,24 @@
         </div>
     </section>
 
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <span class="section-label" data-i18n="newsletterLabel">Stay Connected</span>
+                <h2 class="section-title" data-i18n="newsletterTitle">Get Exclusive Deals &<br>Travel Tips</h2>
+                <p data-i18n="newsletterDesc">Subscribe to receive special rates, seasonal offers, and insider tips for exploring La Fortuna and the Arenal region.</p>
+                <form class="newsletter-form" id="newsletterForm" action="#" method="POST">
+                    <div class="newsletter-input-group">
+                        <input type="email" name="email" placeholder="Your email address" required aria-label="Email address" data-i18n-placeholder="newsletterPlaceholder">
+                        <button type="submit" class="btn btn-primary" data-i18n="newsletterBtn">Subscribe</button>
+                    </div>
+                    <p class="newsletter-privacy" data-i18n="newsletterPrivacy">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -467,6 +515,7 @@
                         <li><a href="pages/rooms.html" data-i18n="navRooms">Rooms</a></li>
                         <li><a href="pages/gallery.html" data-i18n="navGallery">Gallery</a></li>
                         <li><a href="pages/about.html" data-i18n="navAbout">About Us</a></li>
+                        <li><a href="pages/things-to-do.html" data-i18n="navThingsToDo">Things to Do</a></li>
                     </ul>
                 </div>
 
@@ -499,7 +548,8 @@
             </div>
             
             <div class="footer-bottom">
-                <p data-i18n="footerCopyright">&copy; 2025 Hotel Confort Arenal. All rights reserved.</p>
+                <p data-i18n="footerCopyright">&copy; 2026 Hotel Confort Arenal. All rights reserved.</p>
+                <a href="pages/privacy.html" class="footer-privacy-link" data-i18n="footerPrivacy">Privacy Policy</a>
             </div>
         </div>
     </footer>

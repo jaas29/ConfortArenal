@@ -396,22 +396,92 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ========================================
-    // Video Fallback
+    // Newsletter Form
     // ========================================
-    const heroVideo = document.querySelector('.hero-video');
-    
-    if (heroVideo) {
-        heroVideo.addEventListener('error', function() {
-            // If video fails to load, show the poster image
-            this.style.display = 'none';
-            const heroBg = this.closest('.hero-bg');
-            if (heroBg) {
-                heroBg.style.backgroundImage = `url(${this.getAttribute('poster')})`;
-                heroBg.style.backgroundSize = 'cover';
-                heroBg.style.backgroundPosition = 'center';
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+
+            // Track the signup event
+            if (typeof gtag === 'function') {
+                gtag('event', 'newsletter_signup', { email_provided: true });
             }
+
+            // Replace form with success message
+            // TODO: Connect to Mailchimp or email service API
+            const successMsg = t('newsletterSuccess');
+            this.innerHTML = '<p class="newsletter-success">' + successMsg + '</p>';
         });
     }
-    
+
+    // ========================================
+    // Translate placeholders
+    // ========================================
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[currentLanguage] && translations[currentLanguage][key]) {
+            el.placeholder = translations[currentLanguage][key];
+        }
+    });
+
+    // ========================================
+    // GA4 Event Tracking
+    // ========================================
+    function trackEvent(eventName, params) {
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, params);
+        }
+    }
+
+    // Track all "Book Now" / reservation clicks
+    document.querySelectorAll('a[href*="cloudbeds.com"]').forEach(link => {
+        link.addEventListener('click', function() {
+            const label = this.textContent.trim() || 'Book Now';
+            const page = window.location.pathname;
+            trackEvent('click_book_now', {
+                link_text: label,
+                page_location: page
+            });
+        });
+    });
+
+    // Track WhatsApp clicks
+    document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+        link.addEventListener('click', function() {
+            trackEvent('click_whatsapp', {
+                page_location: window.location.pathname
+            });
+        });
+    });
+
+    // Track phone clicks
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', function() {
+            trackEvent('click_phone', {
+                page_location: window.location.pathname
+            });
+        });
+    });
+
+    // Track email clicks
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.addEventListener('click', function() {
+            trackEvent('click_email', {
+                page_location: window.location.pathname
+            });
+        });
+    });
+
+    // Track language switch
+    document.querySelectorAll('.lang-link').forEach(link => {
+        link.addEventListener('click', function() {
+            trackEvent('language_switch', {
+                language: this.dataset.lang
+            });
+        });
+    });
+
     console.log('Hotel Confort Arenal - Website loaded successfully');
 });

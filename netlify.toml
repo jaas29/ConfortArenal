@@ -46,7 +46,7 @@
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src 'self' https://fonts.gstatic.com;
       img-src 'self' data: https: blob:;
-      media-src 'self' https://assets.mixkit.co;
+      media-src 'self';
       frame-src https://www.youtube.com https://www.google.com https://hotels.cloudbeds.com;
       connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;
       base-uri 'self';

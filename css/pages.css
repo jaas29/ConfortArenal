@@ -867,6 +867,172 @@
 }
 
 /* ========================================
+   Things to Do Page
+   ======================================== */
+.things-intro {
+    padding: var(--space-xl) 0;
+    background: var(--color-white);
+}
+
+.things-intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.things-intro-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.activities-section {
+    padding: var(--space-xl) 0 var(--space-2xl);
+    background: var(--color-white);
+}
+
+.activities-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    max-width: 900px;
+}
+
+.activity-card {
+    padding: var(--space-xl);
+    background: var(--color-cream);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-primary);
+}
+
+.activity-distance {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent-accessible);
+    margin-bottom: var(--space-xs);
+}
+
+.activity-content h2 {
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
+    margin-bottom: var(--space-sm);
+}
+
+.activity-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+.activity-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.activity-highlights span {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    background: var(--color-white);
+    border-radius: 100px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.things-cta {
+    padding: var(--space-2xl) 0;
+    background: var(--color-primary);
+}
+
+.things-cta-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.things-cta h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.things-cta p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.125rem;
+    margin-bottom: var(--space-lg);
+}
+
+.things-cta-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.things-cta .btn-secondary {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.things-cta .btn-secondary:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+/* ========================================
+   Privacy / Legal Page
+   ======================================== */
+.legal-content {
+    padding: var(--space-2xl) 0;
+    background: var(--color-white);
+}
+
+.legal-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-text h2 {
+    font-size: 1.5rem;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+}
+
+.legal-text h2:first-child {
+    margin-top: 0;
+}
+
+.legal-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-sm);
+}
+
+.legal-text ul {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-md);
+}
+
+.legal-text li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+    margin-bottom: var(--space-xs);
+    list-style: disc;
+}
+
+.legal-text a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.legal-text a:hover {
+    color: var(--color-accent);
+}
+
+/* ========================================
    Responsive - Subpages
    ======================================== */
 @media (max-width: 992px) {

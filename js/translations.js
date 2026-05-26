@@ -48,6 +48,16 @@ const translations = {
     privateTerraces: "Private Terrace",
     equippedKitchen: "Equipped Kitchen",
 
+    // Book Direct
+    bookDirectLabel: "Why Book Direct?",
+    bookDirectTitle: "Best Rate Guaranteed",
+    bookDirectDesc: "Book directly on our website and get the best available rate -- no hidden fees, no middlemen. Plus, enjoy exclusive perks only available to direct guests.",
+    perkBestRate: "Best price -- always lower than OTAs",
+    perkFlexible: "Flexible cancellation policy",
+    perkDirect: "Direct communication with our team",
+    perkSpecial: "Special requests handled personally",
+    bookDirectBtn: "Book Direct & Save",
+
     // Amenities
     amenitiesLabel: "What's Included",
     amenitiesTitle: "Everything You Need",
@@ -85,6 +95,15 @@ const translations = {
     ctaText: "Book your stay at Hotel Confort Arenal and discover the magic of Costa Rica's most spectacular destination.",
     ctaBtn: "Book Your Stay Now",
 
+    // Newsletter
+    newsletterLabel: "Stay Connected",
+    newsletterTitle: "Get Exclusive Deals &<br>Travel Tips",
+    newsletterDesc: "Subscribe to receive special rates, seasonal offers, and insider tips for exploring La Fortuna and the Arenal region.",
+    newsletterPlaceholder: "Your email address",
+    newsletterBtn: "Subscribe",
+    newsletterPrivacy: "We respect your privacy. Unsubscribe at any time.",
+    newsletterSuccess: "Thank you for subscribing! Check your email for a welcome message.",
+
     // Footer
     footerTagline: "Hospedaje & Naturaleza",
     footerDesc: "Your home away from home in the heart of Costa Rica's most beautiful landscape.",
@@ -92,9 +111,63 @@ const translations = {
     footerContact: "Contact",
     footerFollow: "Follow Us",
     footerCopyright: "&copy; 2026 Hotel Confort Arenal. All rights reserved.",
+    footerPrivacy: "Privacy Policy",
     footerPhone: "+506 8615 4141",
     footerEmail: "info@confortarenal.com",
     footerWhatsApp: "WhatsApp Us",
+
+    // Things to Do
+    navThingsToDo: "Things to Do",
+    thingsLabel: "Explore La Fortuna",
+    thingsTitle: "Things to Do",
+    thingsDesc: "Discover the best activities, tours, and natural wonders near Arenal Volcano -- all easily accessible from Hotel Confort Arenal.",
+    thingsIntroText: "La Fortuna is one of Costa Rica's most exciting destinations, offering everything from volcanic hot springs and jungle hikes to world-class wildlife and adventure sports. As your hosts, we'll help you plan the perfect itinerary and arrange tours at the best local rates.",
+    activityHotSpringsDistance: "15 min from hotel",
+    activityHotSpringsTitle: "Hot Springs",
+    activityHotSpringsDesc: "Relax in naturally heated thermal waters surrounded by tropical rainforest. The Arenal region is famous for its volcanic hot springs, with options ranging from luxurious resort pools to free natural river springs. Tabacon, Baldi, Ecotermales, and the free El Choyin river hot springs are all nearby.",
+    activityHotSpringsH1: "Tabacon Grand Spa",
+    activityHotSpringsH2: "Ecotermales",
+    activityHotSpringsH3: "Baldi Hot Springs",
+    activityHotSpringsH4: "Free river springs",
+    activityVolcanoDistance: "10 min from hotel",
+    activityVolcanoTitle: "Arenal Volcano National Park",
+    activityVolcanoDesc: "Hike through lava trails and primary forest at the base of the iconic Arenal Volcano. The national park offers well-maintained trails with stunning views of the volcano, Lake Arenal, and incredible biodiversity including toucans, monkeys, and coatis.",
+    activityVolcanoH1: "Guided hikes",
+    activityVolcanoH2: "Lava trails",
+    activityVolcanoH3: "Wildlife spotting",
+    activityVolcanoH4: "Volcano viewpoints",
+    activityWaterfallDistance: "20 min from hotel",
+    activityWaterfallTitle: "La Fortuna Waterfall",
+    activityWaterfallDesc: "Descend 500 steps through lush rainforest to reach the magnificent 70-meter La Fortuna Waterfall. Swim in the crystal-clear pool at the base, surrounded by towering cliffs and tropical vegetation. One of the most photographed spots in Costa Rica.",
+    activityWaterfallH1: "70m waterfall",
+    activityWaterfallH2: "Swimming pool",
+    activityWaterfallH3: "Nature trails",
+    activityWaterfallH4: "Photography",
+    activityAdventureDistance: "Tours arranged from hotel",
+    activityAdventureTitle: "Adventure & Canopy Tours",
+    activityAdventureDesc: "Get your adrenaline pumping with world-class adventure activities. Zip-line through the canopy, go whitewater rafting on the Pacuare or Balsa rivers, try canyoneering down waterfalls, or explore caves. La Fortuna is the adventure capital of Costa Rica.",
+    activityAdventureH1: "Zip-lining",
+    activityAdventureH2: "White water rafting",
+    activityAdventureH3: "Canyoneering",
+    activityAdventureH4: "ATV tours",
+    activityWildlifeDistance: "Various locations",
+    activityWildlifeTitle: "Wildlife & Nature",
+    activityWildlifeDesc: "Costa Rica is home to 5% of the world's biodiversity. Take a guided night walk to spot frogs, insects, and nocturnal mammals. Visit hanging bridges for a bird's-eye view of the canopy. Explore the Arenal region's incredible ecosystem of sloths, toucans, monkeys, and more.",
+    activityWildlifeH1: "Night walks",
+    activityWildlifeH2: "Hanging bridges",
+    activityWildlifeH3: "Birdwatching",
+    activityWildlifeH4: "Sloth spotting",
+    activityLakeDistance: "25 min from hotel",
+    activityLakeTitle: "Lake Arenal",
+    activityLakeDesc: "Costa Rica's largest lake offers kayaking, stand-up paddleboarding, fishing, and scenic boat tours with stunning volcano views. The lake area is also great for windsurfing and kitesurfing, especially from November to April.",
+    activityLakeH1: "Kayaking",
+    activityLakeH2: "Paddleboarding",
+    activityLakeH3: "Fishing tours",
+    activityLakeH4: "Boat tours",
+    thingsCtaTitle: "Need Help Planning Your Adventures?",
+    thingsCtaDesc: "Our team arranges tours at the best local rates. Tell us what interests you and we'll create your perfect itinerary.",
+    thingsCtaWhatsApp: "Message Us on WhatsApp",
+    thingsCtaBook: "Book Your Stay",
 
     // ROOMS PAGE
     roomsPageLabel: "Accommodations",
@@ -356,6 +429,16 @@ const translations = {
     privateTerraces: "Terraza Privada",
     equippedKitchen: "Cocina Equipada",
 
+    // Reserva Directa
+    bookDirectLabel: "Por que reservar directo?",
+    bookDirectTitle: "Mejor Tarifa Garantizada",
+    bookDirectDesc: "Reserva directamente en nuestro sitio web y obtene la mejor tarifa disponible -- sin cargos ocultos, sin intermediarios. Ademas, disfruta beneficios exclusivos solo disponibles para huespedes directos.",
+    perkBestRate: "Mejor precio -- siempre menor que en OTAs",
+    perkFlexible: "Politica de cancelacion flexible",
+    perkDirect: "Comunicacion directa con nuestro equipo",
+    perkSpecial: "Solicitudes especiales atendidas personalmente",
+    bookDirectBtn: "Reserva Directo y Ahorra",
+
     // Comodidades
     amenitiesLabel: "Qué Está Incluido",
     amenitiesTitle: "Todo lo Que Necesitas",
@@ -393,16 +476,79 @@ const translations = {
     ctaText: "Reserva tu estadía en Hotel Confort Arenal y descubre la magia del destino más espectacular de Costa Rica.",
     ctaBtn: "Reserva Tu Estadía Ahora",
 
+    // Newsletter
+    newsletterLabel: "Mantente Conectado",
+    newsletterTitle: "Recibe Ofertas Exclusivas y<br>Tips de Viaje",
+    newsletterDesc: "Suscribete para recibir tarifas especiales, ofertas de temporada y tips para explorar La Fortuna y la region del Arenal.",
+    newsletterPlaceholder: "Tu correo electronico",
+    newsletterBtn: "Suscribirse",
+    newsletterPrivacy: "Respetamos tu privacidad. Cancela tu suscripcion en cualquier momento.",
+    newsletterSuccess: "Gracias por suscribirte! Revisa tu correo para un mensaje de bienvenida.",
+
     // Footer
     footerTagline: "Hospedaje & Naturaleza",
     footerDesc: "Tu hogar lejos de casa en el corazón del paisaje más hermoso de Costa Rica.",
     footerQuickLinks: "Enlaces Rápidos",
     footerContact: "Contacto",
     footerFollow: "Síguenos",
-    footerCopyright: "&copy; 2025 Hotel Confort Arenal. Todos los derechos reservados.",
+    footerCopyright: "&copy; 2026 Hotel Confort Arenal. Todos los derechos reservados.",
+    footerPrivacy: "Politica de Privacidad",
     footerPhone: "+506 8615 4141",
     footerEmail: "info@confortarenal.com",
     footerWhatsApp: "Contáctanos por WhatsApp",
+
+    // Que Hacer
+    navThingsToDo: "Que Hacer",
+    thingsLabel: "Explora La Fortuna",
+    thingsTitle: "Que Hacer",
+    thingsDesc: "Descubre las mejores actividades, tours y maravillas naturales cerca del Volcan Arenal -- todo facilmente accesible desde Hotel Confort Arenal.",
+    thingsIntroText: "La Fortuna es uno de los destinos mas emocionantes de Costa Rica, ofreciendo desde aguas termales volcanicas y caminatas en la selva hasta vida silvestre y deportes de aventura de clase mundial. Como tus anfitriones, te ayudaremos a planificar el itinerario perfecto y organizar tours a las mejores tarifas locales.",
+    activityHotSpringsDistance: "15 min del hotel",
+    activityHotSpringsTitle: "Aguas Termales",
+    activityHotSpringsDesc: "Relajate en aguas termales naturales rodeado de selva tropical. La region del Arenal es famosa por sus aguas termales volcanicas, con opciones que van desde piscinas de resorts lujosos hasta manantiales naturales gratuitos. Tabacon, Baldi, Ecotermales y las aguas termales gratuitas del rio El Choyin estan cerca.",
+    activityHotSpringsH1: "Tabacon Grand Spa",
+    activityHotSpringsH2: "Ecotermales",
+    activityHotSpringsH3: "Baldi Hot Springs",
+    activityHotSpringsH4: "Aguas termales gratuitas",
+    activityVolcanoDistance: "10 min del hotel",
+    activityVolcanoTitle: "Parque Nacional Volcan Arenal",
+    activityVolcanoDesc: "Camina por senderos de lava y bosque primario en la base del iconico Volcan Arenal. El parque nacional ofrece senderos bien mantenidos con vistas impresionantes del volcan, el Lago Arenal y una increible biodiversidad incluyendo tucanes, monos y pizotes.",
+    activityVolcanoH1: "Caminatas guiadas",
+    activityVolcanoH2: "Senderos de lava",
+    activityVolcanoH3: "Avistamiento de fauna",
+    activityVolcanoH4: "Miradores del volcan",
+    activityWaterfallDistance: "20 min del hotel",
+    activityWaterfallTitle: "Catarata La Fortuna",
+    activityWaterfallDesc: "Desciende 500 escalones a traves de exuberante selva tropical para llegar a la magnifica Catarata La Fortuna de 70 metros. Nada en la piscina cristalina en la base, rodeado de acantilados y vegetacion tropical. Uno de los lugares mas fotografiados de Costa Rica.",
+    activityWaterfallH1: "Catarata de 70m",
+    activityWaterfallH2: "Piscina natural",
+    activityWaterfallH3: "Senderos naturales",
+    activityWaterfallH4: "Fotografia",
+    activityAdventureDistance: "Tours organizados desde el hotel",
+    activityAdventureTitle: "Aventura y Canopy",
+    activityAdventureDesc: "Siente la adrenalina con actividades de aventura de clase mundial. Deslizate por el dosel en tirolesa, haz rafting en los rios Pacuare o Balsa, prueba el canyoning por cascadas o explora cuevas. La Fortuna es la capital de la aventura de Costa Rica.",
+    activityAdventureH1: "Tirolesa",
+    activityAdventureH2: "Rafting",
+    activityAdventureH3: "Canyoning",
+    activityAdventureH4: "Tours en ATV",
+    activityWildlifeDistance: "Varias ubicaciones",
+    activityWildlifeTitle: "Vida Silvestre y Naturaleza",
+    activityWildlifeDesc: "Costa Rica alberga el 5% de la biodiversidad mundial. Haz una caminata nocturna guiada para ver ranas, insectos y mamiferos nocturnos. Visita puentes colgantes para una vista panoramica del dosel. Explora el increible ecosistema de la region del Arenal con perezosos, tucanes, monos y mas.",
+    activityWildlifeH1: "Caminatas nocturnas",
+    activityWildlifeH2: "Puentes colgantes",
+    activityWildlifeH3: "Avistamiento de aves",
+    activityWildlifeH4: "Avistamiento de perezosos",
+    activityLakeDistance: "25 min del hotel",
+    activityLakeTitle: "Lago Arenal",
+    activityLakeDesc: "El lago mas grande de Costa Rica ofrece kayak, paddleboard, pesca y tours en bote con vistas impresionantes al volcan. La zona del lago tambien es ideal para windsurf y kitesurf, especialmente de noviembre a abril.",
+    activityLakeH1: "Kayak",
+    activityLakeH2: "Paddleboard",
+    activityLakeH3: "Tours de pesca",
+    activityLakeH4: "Tours en bote",
+    thingsCtaTitle: "Necesitas Ayuda para Planificar tus Aventuras?",
+    thingsCtaDesc: "Nuestro equipo organiza tours a las mejores tarifas locales. Cuentanos que te interesa y crearemos tu itinerario perfecto.",
+    thingsCtaWhatsApp: "Escribenos por WhatsApp",
+    thingsCtaBook: "Reserva Tu Estadia",
 
     // PÁGINA DE HABITACIONES
     roomsPageLabel: "Alojamientos",
@@ -636,6 +782,14 @@ function setLanguage(lang) {
     const key = el.dataset.i18n;
     if (translations[lang][key]) {
       el.innerHTML = translations[lang][key];
+    }
+  });
+
+  // Update placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang][key]) {
+      el.placeholder = translations[lang][key];
     }
   });
 

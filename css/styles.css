@@ -346,7 +346,8 @@ p {
     z-index: -1;
 }
 
-.hero-video {
+.hero-video,
+.hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -632,6 +633,77 @@ p {
 }
 
 /* ========================================
+   Book Direct Section
+   ======================================== */
+.book-direct {
+    padding: var(--space-3xl) 0;
+    background: var(--color-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.book-direct::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    pointer-events: none;
+}
+
+.book-direct-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.book-direct-content .section-title.light {
+    color: var(--color-white);
+}
+
+.book-direct-content p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-xl);
+}
+
+.book-direct-perks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm) var(--space-lg);
+    margin-bottom: var(--space-xl);
+    text-align: left;
+}
+
+.perk {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.perk svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    stroke: var(--color-accent-light);
+}
+
+.perk span {
+    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 600px) {
+    .book-direct-perks {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
    Amenities Section
    ======================================== */
 .amenities {
@@ -853,6 +925,89 @@ p {
 }
 
 /* ========================================
+   Newsletter Section
+   ======================================== */
+.newsletter {
+    padding: var(--space-3xl) 0;
+    background: var(--color-cream);
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-content p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-lg);
+}
+
+.newsletter-form {
+    width: 100%;
+}
+
+.newsletter-input-group {
+    display: flex;
+    gap: 0;
+    max-width: 500px;
+    margin: 0 auto var(--space-sm);
+}
+
+.newsletter-input-group input[type="email"] {
+    flex: 1;
+    padding: 1rem 1.25rem;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    border: 1.5px solid var(--color-gray-light);
+    border-right: none;
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    background: var(--color-white);
+    color: var(--color-charcoal);
+    outline: none;
+    transition: var(--transition-base);
+}
+
+.newsletter-input-group input[type="email"]:focus {
+    border-color: var(--color-primary);
+}
+
+.newsletter-input-group .btn {
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    white-space: nowrap;
+}
+
+.newsletter-privacy {
+    font-size: 0.8125rem !important;
+    color: var(--color-gray) !important;
+}
+
+.newsletter-success {
+    padding: var(--space-md);
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .newsletter-input-group {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+
+    .newsletter-input-group input[type="email"] {
+        border-right: 1.5px solid var(--color-gray-light);
+        border-radius: var(--radius-sm);
+    }
+
+    .newsletter-input-group .btn {
+        border-radius: var(--radius-sm);
+    }
+}
+
+/* ========================================
    Footer
    ======================================== */
 .footer {
@@ -941,11 +1096,24 @@ p {
 .footer-bottom {
     padding-top: var(--space-lg);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer-bottom p {
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-privacy-link {
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-privacy-link:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* ========================================
@@ -1333,6 +1501,15 @@ p {
 .cookie-buttons .btn {
     padding: 0.625rem 1.25rem;
     font-size: 0.875rem;
+}
+
+.cookie-privacy-link {
+    color: var(--color-accent-light);
+    text-decoration: underline;
+}
+
+.cookie-privacy-link:hover {
+    color: var(--color-white);
 }
 
 @media (max-width: 768px) {

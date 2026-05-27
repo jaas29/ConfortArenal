@@ -49,14 +49,14 @@ const translations = {
     equippedKitchen: "Equipped Kitchen",
 
     // Book Direct
-    bookDirectLabel: "Why Book Direct?",
-    bookDirectTitle: "Best Rate Guaranteed",
-    bookDirectDesc: "Book directly on our website and get the best available rate -- no hidden fees, no middlemen. Plus, enjoy exclusive perks only available to direct guests.",
-    perkBestRate: "Best price -- always lower than OTAs",
-    perkFlexible: "Flexible cancellation policy",
-    perkDirect: "Direct communication with our team",
-    perkSpecial: "Special requests handled personally",
-    bookDirectBtn: "Book Direct & Save",
+    bookDirectLabel: "Official Booking",
+    bookDirectTitle: "Ready for your Arenal stay?",
+    bookDirectDesc: "Choose your room, check live availability, and confirm your reservation securely.",
+    perkBestRate: "Official hotel booking",
+    perkFlexible: "Real-time room availability",
+    perkDirect: "Secure Cloudbeds checkout",
+    perkSpecial: "Questions? Message us on WhatsApp",
+    bookDirectBtn: "Check Dates & Book",
 
     // Amenities
     amenitiesLabel: "What's Included",
@@ -430,14 +430,14 @@ const translations = {
     equippedKitchen: "Cocina Equipada",
 
     // Reserva Directa
-    bookDirectLabel: "Por que reservar directo?",
-    bookDirectTitle: "Mejor Tarifa Garantizada",
-    bookDirectDesc: "Reserva directamente en nuestro sitio web y obtene la mejor tarifa disponible -- sin cargos ocultos, sin intermediarios. Ademas, disfruta beneficios exclusivos solo disponibles para huespedes directos.",
-    perkBestRate: "Mejor precio -- siempre menor que en OTAs",
-    perkFlexible: "Politica de cancelacion flexible",
-    perkDirect: "Comunicacion directa con nuestro equipo",
-    perkSpecial: "Solicitudes especiales atendidas personalmente",
-    bookDirectBtn: "Reserva Directo y Ahorra",
+    bookDirectLabel: "Reserva Oficial",
+    bookDirectTitle: "Listo para tu estadia en Arenal?",
+    bookDirectDesc: "Elige tu habitacion, consulta disponibilidad en tiempo real y confirma tu reserva de forma segura.",
+    perkBestRate: "Reserva oficial del hotel",
+    perkFlexible: "Disponibilidad en tiempo real",
+    perkDirect: "Pago seguro en Cloudbeds",
+    perkSpecial: "Preguntas? Escribenos por WhatsApp",
+    bookDirectBtn: "Ver Fechas y Reservar",
 
     // Comodidades
     amenitiesLabel: "Qué Está Incluido",

@@ -396,27 +396,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ========================================
-    // Newsletter Form
-    // ========================================
-    const newsletterForm = document.getElementById('newsletterForm');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-
-            // Track the signup event
-            if (typeof gtag === 'function') {
-                gtag('event', 'newsletter_signup', { email_provided: true });
-            }
-
-            // Replace form with success message
-            // TODO: Connect to Mailchimp or email service API
-            const successMsg = t('newsletterSuccess');
-            this.innerHTML = '<p class="newsletter-success">' + successMsg + '</p>';
-        });
-    }
-
-    // ========================================
     // Translate placeholders
     // ========================================
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {

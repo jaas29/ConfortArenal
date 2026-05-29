@@ -492,14 +492,22 @@
     object-fit: cover;
 }
 
-.about-video {
-    width: 100%;
-    height: min(70vh, 640px);
-    min-height: 500px;
-    object-fit: contain;
+.about-story-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-sm);
     background: var(--color-primary-dark);
-    border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
+}
+
+.about-video-frame {
+    width: 100%;
+    max-width: 390px;
+    aspect-ratio: 9 / 16;
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-dark);
 }
 
 /* Values */

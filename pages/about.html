@@ -35,6 +35,7 @@
     <!-- Preconnect & DNS Prefetch for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube-nocookie.com">
     <link rel="dns-prefetch" href="https://hotels.cloudbeds.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
@@ -113,11 +114,16 @@
                     <p data-i18n="aboutStoryPara2">Our rooms are surrounded by beautiful gardens and pure nature, offering spectacular views of the iconic Arenal Volcano. The atmosphere around our hotel is perfect for relaxation and reconnecting with nature—the ideal escape from the everyday hustle.</p>
                     <p data-i18n="aboutStoryPara3">For our entire team, it's a pleasure to help you experience the comfort you deserve. But more than that, our main goal is to create lasting friendships through our warm hospitality. Come as visitors, leave as family.</p>
                 </div>
-                <div class="about-story-image">
-                    <video class="about-video" controls preload="metadata" poster="../images/videos/hotel-overview-2026-poster.jpg" playsinline>
-                        <source src="../images/videos/hotel-overview-2026-480.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="about-story-image about-story-video">
+                    <iframe
+                        class="about-video-frame"
+                        src="https://www.youtube-nocookie.com/embed/lqy1ScyFxcE?rel=0&modestbranding=1"
+                        title="Hotel Confort Arenal video tour"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>

@@ -39,7 +39,7 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
 
     # Content Security Policy
-    # Allows: self, Google (fonts, maps, analytics), YouTube, Mixkit, Cloudbeds, WhatsApp
+    # Allows: self, Google (fonts, maps, analytics), Cloudbeds, WhatsApp
     Content-Security-Policy = '''
       default-src 'self';
       script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com;
@@ -47,7 +47,7 @@
       font-src 'self' https://fonts.gstatic.com;
       img-src 'self' data: https: blob:;
       media-src 'self';
-      frame-src https://www.youtube.com https://www.google.com https://hotels.cloudbeds.com;
+      frame-src https://www.google.com https://hotels.cloudbeds.com;
       connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;
       base-uri 'self';
       form-action 'self' https://hotels.cloudbeds.com;

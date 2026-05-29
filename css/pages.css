@@ -492,6 +492,16 @@
     object-fit: cover;
 }
 
+.about-video {
+    width: 100%;
+    height: min(70vh, 640px);
+    min-height: 500px;
+    object-fit: contain;
+    background: var(--color-primary-dark);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
 /* Values */
 .about-values {
     padding: var(--space-2xl) 0;

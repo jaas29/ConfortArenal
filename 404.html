@@ -7,10 +7,10 @@
     <title>Page Not Found | Hotel Confort Arenal</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <meta name="theme-color" content="#2D5A4A">
 
     <!-- Preconnect for Performance -->
@@ -21,17 +21,20 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Google Analytics 4 - Replace G-2BELG2GGS2 with your actual Measurement ID -->
+    <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BELG2GGS2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'analytics_storage': localStorage.getItem('cookie_consent') === 'accepted' ? 'granted' : 'denied'
+      });
       gtag('js', new Date());
       gtag('config', 'G-2BELG2GGS2');
     </script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <style>
         .error-page {
             min-height: 100vh;
@@ -84,7 +87,7 @@
     <div class="error-page">
         <div class="error-content">
             <div class="error-logo">
-                <img src="images/brand/logo.png" alt="Hotel Confort Arenal">
+                <img src="/images/brand/logo.png" alt="Hotel Confort Arenal">
             </div>
             <div class="error-code">404</div>
             <h1 class="error-title">Page Not Found</h1>
@@ -93,9 +96,9 @@
                 Don't worry - let's get you back on track to planning your Costa Rica adventure!
             </p>
             <div class="error-links">
-                <a href="index.html" class="btn btn-primary">Go to Homepage</a>
-                <a href="pages/rooms.html" class="btn btn-secondary">View Rooms</a>
-                <a href="pages/contact.html" class="btn btn-secondary">Contact Us</a>
+                <a href="/" class="btn btn-primary">Go to Homepage</a>
+                <a href="/pages/rooms.html" class="btn btn-secondary">View Rooms</a>
+                <a href="/pages/contact.html" class="btn btn-secondary">Contact Us</a>
             </div>
         </div>
     </div>

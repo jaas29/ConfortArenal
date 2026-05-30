@@ -75,13 +75,6 @@
         {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true},
         {"@type": "LocationFeatureSpecification", "name": "Pet Friendly", "value": true}
       ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "8.8",
-        "bestRating": "10",
-        "worstRating": "1",
-        "ratingCount": "150"
-      },
       "sameAs": [
         "https://www.facebook.com/confortarenal",
         "https://www.instagram.com/confortarenalhospedaje/"
@@ -117,6 +110,9 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'analytics_storage': localStorage.getItem('cookie_consent') === 'accepted' ? 'granted' : 'denied'
+      });
       gtag('js', new Date());
       gtag('config', 'G-2BELG2GGS2');
     </script>

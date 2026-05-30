@@ -8,19 +8,9 @@
 
     const CONSENT_KEY = 'cookie_consent';
 
-    // Configure GA4 consent defaults (denied until user accepts)
-    if (typeof gtag === 'function') {
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-
-        // If previously accepted, grant immediately
-        if (localStorage.getItem(CONSENT_KEY) === 'accepted') {
-            gtag('consent', 'update', {
-                'analytics_storage': 'granted'
-            });
-        }
-    }
+    // GA4 consent default is set inline in each page <head> BEFORE gtag('config'),
+    // reading the same CONSENT_KEY. This script only handles the banner UI and
+    // the consent->granted update when the user accepts.
 
     // Don't show banner if consent already given
     if (localStorage.getItem(CONSENT_KEY)) {
@@ -44,8 +34,8 @@
                 decline: 'Decline'
             },
             es: {
-                message: 'Usamos cookies para mejorar tu experiencia y analizar el trafico del sitio.',
-                privacy: 'Politica de Privacidad',
+                message: 'Usamos cookies para mejorar tu experiencia y analizar el tráfico del sitio.',
+                privacy: 'Política de Privacidad',
                 accept: 'Aceptar',
                 decline: 'Rechazar'
             }

@@ -326,11 +326,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     const faqItems = document.querySelectorAll('.faq-item');
     
-    faqItems.forEach(item => {
+    faqItems.forEach((item, index) => {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
         
         if (question && answer) {
+            const answerId = answer.id || `faq-answer-${index + 1}`;
+            answer.id = answerId;
+            question.setAttribute('aria-controls', answerId);
+            question.setAttribute('aria-expanded', 'false');
+
             question.addEventListener('click', () => {
                 const isOpen = item.classList.contains('active');
                 
@@ -338,11 +343,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 faqItems.forEach(i => {
                     i.classList.remove('active');
                     i.querySelector('.faq-answer').style.maxHeight = null;
+                    i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
                 });
                 
                 // Toggle current item
                 if (!isOpen) {
                     item.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
                     answer.style.maxHeight = answer.scrollHeight + 'px';
                 }
             });
@@ -462,5 +469,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    console.log('Hotel Confort Arenal - Website loaded successfully');
 });

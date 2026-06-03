@@ -1,1 +1,4 @@
 .DS_Store
+
+# Internal docs — not for public deploy
+GOOGLE_ANALYTICS_SETUP.md

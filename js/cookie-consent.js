@@ -1,19 +1,41 @@
 /**
  * Cookie Consent Banner
  * Hotel Confort Arenal
- * Bilingual (EN/ES) + GA4 consent mode
+ * Bilingual (EN/ES) + strict GA4 opt-in
  */
 (function() {
     'use strict';
 
     const CONSENT_KEY = 'cookie_consent';
+    const GA_MEASUREMENT_ID = 'G-2BELG2GGS2';
 
-    // GA4 consent default is set inline in each page <head> BEFORE gtag('config'),
-    // reading the same CONSENT_KEY. This script only handles the banner UI and
-    // the consent->granted update when the user accepts.
+    function loadAnalytics() {
+        if (window.__hotelAnalyticsLoaded) return;
+        window.__hotelAnalyticsLoaded = true;
 
-    // Don't show banner if consent already given
-    if (localStorage.getItem(CONSENT_KEY)) {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+        document.head.appendChild(script);
+
+        window.gtag('consent', 'default', {
+            analytics_storage: 'granted'
+        });
+        window.gtag('js', new Date());
+        window.gtag('config', GA_MEASUREMENT_ID);
+    }
+
+    var savedConsent = localStorage.getItem(CONSENT_KEY);
+
+    if (savedConsent === 'accepted') {
+        loadAnalytics();
+        return;
+    }
+
+    if (savedConsent === 'declined') {
         return;
     }
 
@@ -69,12 +91,7 @@
             localStorage.setItem(CONSENT_KEY, 'accepted');
             localStorage.setItem(CONSENT_KEY + '_date', new Date().toISOString());
 
-            // Grant GA4 analytics consent
-            if (typeof gtag === 'function') {
-                gtag('consent', 'update', {
-                    'analytics_storage': 'granted'
-                });
-            }
+            loadAnalytics();
 
             closeBanner();
         });
